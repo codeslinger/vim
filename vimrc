@@ -6,6 +6,9 @@ set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 
 " Now we set some defaults for the editor 
+set ts=2
+set sw=2
+set et
 set autoindent		" always set autoindenting on
 set textwidth=0		" Don't wrap words by default
 set nobackup		" Don't keep a backup file
@@ -75,4 +78,6 @@ map TT :tabnew
 map fft :FuzzyFinderTextMate<CR>
 map nt :NERDTree<CR>
 map ntc :NERDTreeClose<CR>
+
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/cache/*
 
