@@ -81,3 +81,6 @@ map ntc :NERDTreeClose<CR>
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/cache/*
 
+" use rainbow highlighting of nested parentheses for Lisp code
+let g:lisp_rainbow=1
+
