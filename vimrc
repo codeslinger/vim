@@ -93,4 +93,5 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 set magic
+set number
 
