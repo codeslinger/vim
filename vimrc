@@ -86,6 +86,13 @@ let g:lisp_rainbow=1
 
 au BufRead,BufNewFile *.rs setfiletype rust
 
-set nu
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': [],
+  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+  \ }
+
+set magic
+set number
 
 autocmd Filetype go setlocal ts=2 noet ai
