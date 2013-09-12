@@ -86,3 +86,6 @@ let g:lisp_rainbow=1
 
 au BufRead,BufNewFile *.rs setfiletype rust
 
+set nu
+
+autocmd Filetype go setlocal ts=2 noet ai
