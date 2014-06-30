@@ -17,6 +17,8 @@ Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-fugitive'
 Plugin 'uarun/vim-protobuf'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'kchmck/vim-coffee-script'
+Bundle 'wting/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -53,6 +55,7 @@ vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
 au Filetype go setlocal ts=4 noet ai
 au BufRead,BufNewFile *.rs setfiletype rust
+au BufNewFile,BufReadPost *.md set filetype=markdown
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -63,10 +66,10 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 let g:airline_detect_whitespace=0
-let g:airline_theme="dark"
+let g:airline_theme="wombat"
 
-map ., :tabp<CR>
-map ,. :tabn<CR>
+map tp :tabp<CR>
+map tn :tabn<CR>
 map TT :tabnew 
 
 colorscheme blackboard
