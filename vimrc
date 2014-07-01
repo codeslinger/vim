@@ -67,6 +67,8 @@ let g:ctrlp_prompt_mappings = {
 
 let g:airline_detect_whitespace=0
 let g:airline_theme="wombat"
+let g:airline_left_sep='›'  " Slightly fancier than '>'
+let g:airline_right_sep='‹' " Slightly fancier than '<'
 
 map tp :tabp<CR>
 map tn :tabn<CR>
